@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --blue: #034275;
+    --blue2: #0461db;
+    --yellow: #FFE500;
+}
+
+body{
+    background-color: var(--white);
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    min-height: 50px;
+    /*background-color: gray; /* retirar o bg color depois */
+}
+
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+}
+
+
+nav{
+    display: flex; /*deixar os itens flexiveis um ao lado do outro*/
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links:hover{
+    color: var(--blue2);
+    transition: .4s;
+    text-decoration:underline;
+    text-underline-offset: .5rem;
+    
+}
+
+.box-btn-actions{
+    display: flex;
+    gap: 1rem;
+
+}
+
+button{
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 14px;
+    cursor: pointer;   
+}
+
+.btn-action{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--white);
+}
+
+.btn-action:hover{
+    background-color: var(--blue2);
+    border: 1px solid var(--blue2);
+    transition: .4s;
+}
+
+
+
+
