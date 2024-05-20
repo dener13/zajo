@@ -224,7 +224,6 @@ footer > div{
 .swiper-container {
     width: 100%;
     height: 400px;
-    background-color: gray;
     position: relative;
 }
 
@@ -233,7 +232,7 @@ footer > div{
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    background: #5f1c1c;
+    background: var(--blue);
     /* Adicione mais estilos conforme necessário */
 }
 
@@ -279,6 +278,34 @@ footer > div{
     width: 100%;
     bottom: 10px; /* Ajuste a posição da paginação */
     z-index: 10;
+}
+
+.image-with-gradient {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-with-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.image-with-gradient img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantém a proporção da imagem */
+    position: relative;
+    z-index: 0;
 }
 
 
