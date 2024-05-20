@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         autoplay: {
-            delay: 3000, // Define o tempo de atraso em milissegundos (3 segundos)
+            delay: 60000, // Define o tempo de atraso em milissegundos (3 segundos)
             disableOnInteraction: false, // Continua o autoplay após interação do usuário
         },
     });

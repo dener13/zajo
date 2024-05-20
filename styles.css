@@ -223,8 +223,10 @@ footer > div{
 
 .swiper-container {
     width: 100%;
-    height: 400px;
+    height: 800px;
     position: relative;
+
+    
 }
 
 .swiper-slide {
@@ -232,81 +234,28 @@ footer > div{
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    background: var(--blue);
     /* Adicione mais estilos conforme necessário */
+    
 }
 
 .swiper-slide img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit:contain; /* Mantém a proporção da imagem e cobre todo o slide */
 }
+
 
 .third-section {
     padding: 20px;
 }
 
 
-#oque-fazemos{
-    background-color: antiquewhite;
-}
 
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: #000; /* Cor dos botões */
-    width: 44px;
-    height: 44px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
 
-/* Posicione os botões de navegação */
-.swiper-button-next {
-    right: 10px;
-}
 
-.swiper-button-prev {
-    left: 10px;
-}
 
-.swiper-pagination {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 10px; /* Ajuste a posição da paginação */
-    z-index: 10;
-}
 
-.image-with-gradient {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-with-gradient::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    z-index: 1;
-}
-
-.image-with-gradient img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Mantém a proporção da imagem */
-    position: relative;
-    z-index: 0;
-}
 
 
 
