@@ -20,13 +20,13 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
     gap: 1rem;
     flex-wrap: wrap;
     padding: .8rem;
     min-height: 50px;
-    /*background-color: gray; /* retirar o bg color depois */
+    /*background-color: gray; /* retirar o bg color depois*/
 }
 
 .box-img-header{
@@ -43,7 +43,7 @@ nav{
     display: flex; /*deixar os itens flexiveis um ao lado do outro*/
     gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
 }
 
@@ -68,11 +68,12 @@ nav{
 
 }
 
-button{
+button {
     padding: .6rem;
     font-size: .9rem;
     border-radius: 14px;
-    cursor: pointer;   
+    cursor: pointer;
+    transition: .4s;   
 }
 
 .btn-action{
@@ -86,6 +87,129 @@ button{
     border: 1px solid var(--blue2);
     transition: .4s;
 }
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex: wrap;
+    align-items: center;
+    min-height: 400px;
+}
+
+.first-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--blue);
+    
+}
+
+/*botao eu quero*/
+.link-action{
+    display: flex;
+    align-items: center;
+    padding: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    width: 8rem;
+    height:0.1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    color: var(--blue);
+    margin-top: 20px;
+}
+
+/*img do truck eu quero*/
+#truck-eu-quero{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+/*botao eu quero*/
+.link-action:hover{
+    display: flex;
+    align-items: center;
+    padding: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    width: 8rem;
+    height: 0.1rem;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    background-color: yellow;
+    border: 1px solid var(--blue);
+    color: var(--blue)
+}
+
+.img-secao-inicial{
+    max-width: 60rem;
+    width: 110%;
+    height: auto;
+}
+
+
+/*section venha fazer parte*/
+.fourth-section{
+    background-color: aquamarine;
+}
+
+footer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--blue);
+    padding: 1rem;
+    color: white;
+    
+}
+
+#contato-footer{
+    text-align: center;
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+
+#sao-jose-footer{
+    text-align: center;
+    color: var(--white);
+}
+
+
+
 
 
 
