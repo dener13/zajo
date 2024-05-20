@@ -221,6 +221,65 @@ footer > div{
     color: var(--white);
 }
 
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: #5f1c1c;
+    /* Adicione mais estilos conforme necessário */
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain; /* Mantém a proporção da imagem e cobre todo o slide */
+}
+
+.third-section {
+    padding: 20px;
+}
+
+
+#oque-fazemos{
+    background-color: antiquewhite;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000; /* Cor dos botões */
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Posicione os botões de navegação */
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px; /* Ajuste a posição da paginação */
+    z-index: 10;
+}
 
 
 
