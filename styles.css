@@ -11,6 +11,7 @@
     --blue: #034275;
     --blue2: #0461db;
     --yellow: #FFE500;
+    --font: font-family: "Montserrat", sans-serif;
 }
 
 body{
@@ -248,6 +249,11 @@ footer > div{
 }
 
 .company-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Opcional, se você quiser centralizar o texto também */
     padding: 1rem;
 }
 
@@ -350,6 +356,34 @@ input[type="submit"] {
     border-color: var(--blue);
     color: white;
 }
+
+.third-section .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.third-section .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.third-section .text-overlay {
+    position: absolute;
+    top: 80px; /* Ajuste conforme necessário */
+    left: 80px; /* Ajuste conforme necessário */
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#qualificacao-h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 
 
 
