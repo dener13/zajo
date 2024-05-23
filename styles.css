@@ -28,7 +28,8 @@ header{
     flex-wrap: wrap;
     padding: .8rem;
     min-height: 50px;
-    /*background-color: gray; /* retirar o bg color depois*/
+    background-color: #f7fcff;
+    background: linear-gradient(to left, #03427517, #f1f8fd);
 }
 
 #venha-fazer-parte-paragrafo{
@@ -86,6 +87,7 @@ button {
     background-color: var(--blue);
     border: 1px solid var(--blue);
     color: var(--white);
+    font-family: "Montserrat", sans-serif;
 }
 
 .btn-action:hover{
@@ -237,7 +239,16 @@ footer > div{
 
 
 .third-section {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Opcional, se você quiser centralizar o texto também */
+    padding: 1rem;
+}
+
+.company-section {
+    padding: 1rem;
 }
 
 
@@ -259,12 +270,13 @@ footer > div{
     max-width: 1200px;
     padding: 25px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .form-container {
     flex: 1;
     max-width: 400px;
+    padding: 10px;
 }
 
 .form-container h2{
@@ -325,7 +337,7 @@ input[type="submit"] {
     color: var(--blue);
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
