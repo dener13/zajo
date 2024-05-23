@@ -183,9 +183,23 @@ h1 {
 }
 
 
-/*section venha fazer parte*/
-.fourth-section{
-    background-color: aquamarine;
+
+
+#venha-fazer-parte {
+    background-image: linear-gradient(rgba(0, 43, 99, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/bg-venhaFazerParte.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#venha-fazer-parte h1{
+    color: white;
+    padding-right: 15rem;
+    font-size: 4rem;
 }
 
 footer{
@@ -221,32 +235,108 @@ footer > div{
     color: var(--white);
 }
 
-.swiper-container {
-    width: 100%;
-    height: 800px;
-    position: relative;
-
-    
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    /* Adicione mais estilos conforme necessário */
-    
-}
-
-.swiper-slide img{
-    max-width: 100%;
-    height: auto;
-    object-fit:contain; /* Mantém a proporção da imagem e cobre todo o slide */
-}
-
 
 .third-section {
     padding: 20px;
+}
+
+
+
+
+
+.fourth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 28rem;
+    max-width: 1200px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.form-container h2{
+    color: #034275;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 1px;
+    color: var(--blue);
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 1px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;  /* Remover outline padrão */
+}
+
+input[type="submit"] {
+    padding: 20px;
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    
+}
+
+.button-container .btn-action {
+    padding: 1.5rem 2rem;
+    background-color: lightgray;
+    color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+.button-container .btn-action:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: white;
 }
 
 
