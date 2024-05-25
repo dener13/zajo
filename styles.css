@@ -23,17 +23,17 @@ body{
     overflow-x: hidden;
 }
 
-header{
+header {
     display: flex;
-    justify-content:space-around;
-    align-items:center;
+    justify-content: space-around;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
     padding: .8rem;
     min-height: 50px;
-    background-color: #f7fcff;
     background: linear-gradient(to left, #03427517, #f1f8fd);
 }
+
 
 #venha-fazer-parte-paragrafo{
     font-size: 1.2rem;
@@ -71,6 +71,9 @@ nav{
     text-underline-offset: .5rem;
     
 }
+
+
+
 
 .box-btn-actions{
     display: flex;
@@ -258,6 +261,7 @@ footer > div{
     justify-content: center;
     text-align: center; /* Opcional, se você quiser centralizar o texto também */
     padding: 1rem;
+    position: relative;
 }
 
 
@@ -363,6 +367,7 @@ input[type="submit"] {
 .third-section .image-container {
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 
 .third-section .image-container img {
@@ -370,6 +375,21 @@ input[type="submit"] {
     width: 100%;
     height: auto;
     margin: 10px;
+    
+}
+
+.image-container img{
+    transition: filter 0.3s ease; /* Adiciona uma transição suave */
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.image-container:hover img {
+    filter:brightness(115%); /* Reduz a luminosidade da imagem quando o mouse passa sobre ela */
+    transform: scale(1.01); /* Aumenta ligeiramente o tamanho da imagem quando o mouse passa sobre ela */
+
 }
 
 .third-section .text-overlay {
@@ -424,6 +444,119 @@ input[type="submit"] {
     font-size: 4rem;
     font-weight: normal;
 }
+
+
+#descubra-h1 {
+    font-size: 1.5em; /* Ajuste conforme necessário */
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.2;
+}
+
+.text-overlay-descubra{
+    position: absolute;
+    top: 300px; /* Ajuste conforme necessário */
+    left: 300px; /* Ajuste conforme necessário */
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+#text-box-seguranca{
+    position: absolute;
+    bottom: 920px; /* ou qualquer valor que desejar */
+    left: 900px; /* ou qualquer valor que desejar */
+    background-color: var(--yellow); /* Cor de fundo com transparência */
+    color: var(--blue); /* Cor do texto */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+#zajo-segurança{
+    position: absolute;
+    z-index: 1; /* Para garantir que o texto fique acima da imagem */
+    bottom: 1300px; /* ou qualquer valor que desejar */
+    left: 330px; /* ou qualquer valor que desejar */
+    color: white; /* Cor do texto */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    /* Adicione outras propriedades de estilo conforme necessário */
+
+}
+
+.text-overlay-agilidade{
+    position: absolute;
+    top: 300px; /* Ajuste conforme necessário */
+    left: 300px; /* Ajuste conforme necessário */
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left; 
+}
+
+
+#qualificacao-h1:hover{
+    transform: scale(1.01);
+}
+
+.image-container p:hover{
+    transform: scale(1.01);
+}
+
+#economia-tempo-h2:hover{
+    transform: scale(1.01);
+}
+
+.image-container h1:hover{
+    transform: scale(1.01);
+}
+
+
+#btn-quero-qualificacao{
+    margin-top: 100px;
+    width: 270px;
+}
+
+#btn-quero-economia-tempo{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    width: 270px;
+}
+
+#btn-quero-descubra{
+    position: absolute;
+    top: 800px;
+    left: 300px;
+    width: 270px;
+}
+
+#btn-quero-seguranca{
+    position: absolute;
+    top: 1500px;
+    left: 300px;
+    width: 270px;
+}
+
+#btn-quero-agilidade{
+    position: absolute;
+    top: 2200px;
+    left: 300px;
+    width: 270px;
+}
+
+
+
+
+
+
+
 
 
 
