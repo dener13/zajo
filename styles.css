@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+
 :root{
     --white: #fff;
     --blue: #034275;
@@ -246,6 +248,7 @@ footer > div{
     justify-content: center;
     text-align: center; /* Opcional, se você quiser centralizar o texto também */
     padding: 1rem;
+    
 }
 
 .company-section {
@@ -366,6 +369,7 @@ input[type="submit"] {
     display: block;
     width: 100%;
     height: auto;
+    margin: 10px;
 }
 
 .third-section .text-overlay {
@@ -383,6 +387,45 @@ input[type="submit"] {
     font-size: 4rem;
     font-weight: bold;
 }
+
+#economia-tempo-h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.text-overlay-2{
+    position: absolute;
+    top: 70px; /* Ajuste conforme necessário */
+    left: 600px; /* Ajuste conforme necessário */
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.benefits-list {
+    list-style-type: disc; /* Define o tipo de marcador como bolinha */
+    padding-left: 20px; /* Ajusta o recuo à esquerda para os itens da lista */
+    margin-top: 35px; /* Espaçamento antes da lista */
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.benefits-list li {
+    margin-bottom: 20px; /* Espaçamento entre os itens da lista */
+}
+
+.vantagens{
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+
 
 
 
