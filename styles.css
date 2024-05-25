@@ -451,6 +451,7 @@ input[type="submit"] {
     margin-bottom: 10px;
     color: white;
     line-height: 1.2;
+    transition: transform 0.4s ease; /* Adicionando uma transição suave */
 }
 
 .text-overlay-descubra{
@@ -500,13 +501,24 @@ input[type="submit"] {
     text-align: left; 
 }
 
+#qualificacao-h1{
+    transition: transform 0.4s ease; /* Adicionando uma transição suave */
+}
 
 #qualificacao-h1:hover{
     transform: scale(1.01);
 }
 
+.image-container p{
+    transition: transform 0.4s ease; /* Adicionando uma transição suave */
+}
+
 .image-container p:hover{
     transform: scale(1.01);
+}
+
+#economia-tempo-h2{
+    transition: transform 0.4s ease; /* Adicionando uma transição suave */
 }
 
 #economia-tempo-h2:hover{
@@ -514,6 +526,14 @@ input[type="submit"] {
 }
 
 .image-container h1:hover{
+    transform: scale(1.01);
+}
+
+#venha-fazer-parte h1 {
+    transition: transform 0.4s ease; /* Adicionando uma transição suave */
+}
+
+#venha-fazer-parte h1:hover{
     transform: scale(1.01);
 }
 
@@ -549,6 +569,21 @@ input[type="submit"] {
     top: 2200px;
     left: 300px;
     width: 270px;
+}
+
+.second-section{
+    background-color: #edf3f8;
+}
+
+#quem-somos{
+    text-align: center;
+}
+
+#quem-somos p{
+    text-align: left;
+    margin: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 
