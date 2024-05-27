@@ -37,6 +37,7 @@ header {
 
 #venha-fazer-parte-paragrafo{
     font-size: 1.2rem;
+    line-height: 2;
 }
 
 .box-img-header{
@@ -139,6 +140,7 @@ h1 {
 #slogan{
     font-size: 3rem;
     color: var(--blue); 
+    line-height: 1.2;
 }
 
 /*botao eu quero*/
@@ -344,12 +346,14 @@ input[type="submit"] {
     
 }
 
+
+
 .button-container .btn-action {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 4rem;
     background-color: lightgray;
     color: var(--blue);
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     font-size: .9rem;
     font-weight: bold;
     text-align: center;
@@ -357,6 +361,8 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.4s, border-color 0.4s;
 }
+
+
 
 .button-container .btn-action:hover {
     background-color: var(--blue);
@@ -584,7 +590,51 @@ input[type="submit"] {
     margin: 20px;
     font-size: 1.2em;
     line-height: 1.5;
+    color: #034275;
 }
+
+#cadastrar-btn{
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /*background-color: #034275;*/
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-container input {
+    
+    
+}
+
+.checkbox-container input:checked + .checkbox-label {
+    color:#034275;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-left: 4px;;
+}
+
+.checkbox-container:hover {
+    
+}
+
+
+
+
+
 
 
 

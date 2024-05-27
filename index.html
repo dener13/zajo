@@ -26,8 +26,7 @@
         </nav>
 
         <div class="box-btn-actions">
-            <button class="btn-action">Cadastrar</button>
-            <button class="btn-action">Entrar</button>
+            <a href="#venha-fazer-parte" class="btn-action" id="cadastrar-btn">Cadastrar</a>
         </div>
 
     </Header>
@@ -62,12 +61,24 @@
                     <h2>Venha fazer parte!</h2>
                     
                     <div class="button-container">
-                        <a class="btn-action link-action" href="#">
+
+                        <label class="checkbox-container">
+                            <input type="radio" name="role" value="motorista">
+                            <span class="checkbox-label">Sou Motorista</span>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="radio" name="role" value="empresa">
+                            <span class="checkbox-label">Sou Empresa</span>
+                        </label>
+                        
+                        <!--<a class="btn-action link-action" href="#">
                             Sou Motorista
                         </a>
-                        <a class="btn-action link-action" href="#">
+                        
+                        <a class="btn-action link-action" id="empresa-borda-esquerda" href="#">
                             Sou Empresa
-                        </a>
+                        </a> -->
+
                     </div>
 
                     <form>
