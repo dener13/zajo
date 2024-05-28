@@ -1,4 +1,3 @@
-// Variável para armazenar o último momento em que os dados foram enviados
 let lastSubmissionTime = 0;
 
 function submitForm(event) {
@@ -47,6 +46,13 @@ function submitForm(event) {
         return;
     }
     formData.append('role', role.value);
+
+    // Verificar se o checkbox de termos de uso e política de privacidade está marcado
+    const termosCheckbox = document.getElementById('termos-checkbox');
+    if (!termosCheckbox.checked) {
+        alert('Por favor, leia e aceite os Termos de Uso e a Política de Privacidade antes de enviar.');
+        return;
+    }
 
     // Enviar o formulário
     fetch('https://script.google.com/macros/s/AKfycbwwd8paTFBLnEuNzL-Z5qR-lqE0aQcWqyFuvcPsRBcYK3lgT5swi1poQd7tq5ZmpP3q/exec', {
