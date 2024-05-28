@@ -610,10 +610,7 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-.checkbox-container input {
-    
-    
-}
+
 
 .checkbox-container input:checked + .checkbox-label {
     color:#034275;
@@ -627,9 +624,7 @@ input[type="submit"] {
     margin-left: 4px;;
 }
 
-.checkbox-container:hover {
-    
-}
+
 
 
 
