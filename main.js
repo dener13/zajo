@@ -4,9 +4,9 @@ function submitForm(event) {
     event.preventDefault();
     
     const now = Date.now();
-    // Verificar se já se passaram 30 segundos desde o último envio
-    if (now - lastSubmissionTime < 30000) {
-        alert('Por favor, aguarde 30 segundos antes de enviar novamente.');
+    // Verificar se já se passaram 10 segundos desde o último envio
+    if (now - lastSubmissionTime < 10000) {
+        alert('Por favor, aguarde 10 segundos antes de enviar novamente.');
         return;
     }
     
@@ -68,3 +68,9 @@ function submitForm(event) {
     })
     .catch(error => console.error('Error!', error.message));
 }
+
+
+
+
+
+

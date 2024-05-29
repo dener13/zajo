@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 :root{
     --white: #fff;
@@ -21,6 +23,7 @@ body{
     height: 100vh;
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
+    
 }
 
 header {
@@ -36,7 +39,7 @@ header {
 
 
 #venha-fazer-parte-paragrafo{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2;
 }
 
@@ -48,6 +51,7 @@ header {
     max-width: 60px;
     height: 100%;
 }
+
 
 
 nav{
@@ -138,7 +142,7 @@ h1 {
 }
 
 #slogan{
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--blue); 
     line-height: 1.2;
 }
@@ -188,7 +192,7 @@ h1 {
 
 .img-secao-inicial{
     max-width: 60rem;
-    width: 110%;
+    width: 130%;
     height: auto;
 }
 
@@ -623,6 +627,24 @@ input[type="submit"] {
     width: 100%;
     margin-left: 4px;;
 }
+
+.subtitle-vantagem{
+    color:#333;
+    font-size: 1.8em;
+    
+}
+
+#myForm label{
+    margin-bottom: 6px;
+}
+
+#label-termos{
+    margin-top: 5px;
+}
+
+
+
+
 
 
 
