@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZAJO - App de fretes</title>
+    <link rel="icon" href="imgs/FlatIcon site.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -86,7 +87,7 @@
                         <br>
                         
                         
-                        <input class="btn-action" type="submit" value="Enviar">
+                        <input id="btn-enviar" type="submit" value="Enviar">
                     </form>
                 </div>
             </div>
@@ -100,10 +101,10 @@
             <br>
             
             <div class="image-container">
-                <img src="imgs/Tela qualificação.png" alt="">
+                <img class="img-border"  src="imgs/Tela qualificação.png" alt="">
                 <div class="text-overlay">
                     <h1 id="qualificacao-h1">Qualificação</h1> <br>
-                    <p><span style="color:#FFE500">Qualificamos você</span> por meio <br>
+                    <p id="qualificacao-p"><span style="color:#FFE500">Qualificamos você</span> por meio <br>
                     de um <span style="color:#FFE500">perfil verificado</span>, <br>
                     trazendo sua imagem <br>
                     profissional mais próxima as <br>
@@ -140,7 +141,7 @@
             <h1 class="title vantagens">Vantagens para a sua empresa!</h1>
             <p class="subtitle-vantagem">Um pouco do que temos a oferecer para sua empresa!</p> <br><br>
             <div class="image-container">
-                <img src="imgs/descubra a revolução.png" alt="">
+                <img class="img-border"  src="imgs/descubra a revolução.png" alt="">
                 <div class="text-overlay-descubra">
                     <h1 id="descubra-h1">Descubra a <span style="color:#FFE500">REVOLUÇÃO</span> no <br>
                      transporte de carga com a <span style="color: #FFE500;">Zajo</span>!</h1> <br>
@@ -156,7 +157,7 @@
             </div> <br>
 
             <div class="image-container">
-                <img src="imgs/Tela de Segurança.png" alt="">
+                <img class="img-border"  src="imgs/Tela de Segurança.png" alt="">
                 
                 <p id="zajo-segurança">Com a <strong>Zajo</strong>, segurança é 
                     <span style="color: #FFE500;">prioridade</span>.</p>
@@ -179,7 +180,7 @@
             </div> <br>
 
             <div class="image-container">
-                <img src="imgs/Tela agilidade e praticidade.png" alt="">
+                <img class="img-border" src="imgs/Tela agilidade e praticidade.png" alt="">
                 
                 <a id="btn-quero-agilidade" class="btn-action link-action" href="#venha-fazer-parte">
                     <img id="truck-eu-quero" src="imgs/icon-truck-eu-quero.png" alt="">
@@ -193,16 +194,21 @@
         
 
         <section id="quem-somos" class="second-section">
-            <h1 class="title">Quem somos</h1>
-            <p>A Zajo é a solução digital definitiva para simplificar e otimizar os serviços de frete. Somos uma plataforma inovadora que conecta motoristas de caminhão a empresas que necessitam de transporte de cargas, tudo isso com apenas alguns cliques.
-
-                Criada por João e Felipe, dois empreendedores apaixonados por logística e tecnologia, a Zajo surge como resposta à necessidade urgente de modernizar o setor de transporte de cargas. Combinando conhecimento especializado em desenvolvimento de software e compreensão profunda das demandas do mercado, criamos uma ferramenta que revoluciona a forma como o transporte de mercadorias é realizado.
-                
-                Na Zajo, facilitamos o processo de transporte de cargas de ponta a ponta. Motoristas encontram fretes lucrativos com facilidade, enquanto empresas desfrutam de uma rede de transporte confiável e eficiente. Nossa plataforma elimina a burocracia, reduz os custos e oferece transparência em todas as etapas do processo, permitindo que nossos clientes foquem no que realmente importa: o crescimento de seus negócios.
-                
-                Com a Zajo, não há mais a necessidade de perder tempo em processos manuais e desgastantes. Nossa tecnologia simplifica todo o processo, desde a busca por fretes até o acompanhamento das entregas, proporcionando uma experiência ágil e eficiente para todos os envolvidos.
-                
-                Estamos comprometidos em impulsionar a inovação e promover a excelência no setor de transporte de cargas. Com a Zajo, o futuro do frete é mais simples, mais eficiente e mais lucrativo do que nunca.</p>
+            <div class="image-container">
+                <img class="img-border" src="imgs/quem-somos.png" alt="Quem Somos">
+                <div class="text-overlay"><p>
+                    <span style="color: white;">
+                        Por meio da tecnologia, buscamos <br>
+                    </span> <span style="color: #FFE500;">
+                            credibilizar os caminhoneiros <br>
+                        </span> <span style="color: white;">
+                            e conectá-los
+                            com as empresas que
+                            dispõem
+                        </span> <span style="color: #FFE500;">demandas de frete.</span>
+                </p>
+                </div>
+            </div>
 
         </section>
 
@@ -249,9 +255,11 @@
     São José-SC
         </p>
        
-
+        
     </footer>
-
+    <a href="#" id="back-to-top" class="back-to-top">
+        ↑ 
+    </a>
     <script src="main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>

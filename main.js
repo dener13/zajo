@@ -71,6 +71,24 @@ function submitForm(event) {
 
 
 
+// Quando o usuário rolar 100px para baixo, mostre o botão
+window.onscroll = function() {
+    var backToTop = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+};
+
+// Quando o usuário clicar no botão, role para o topo
+document.getElementById("back-to-top").addEventListener("click", function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+
 
 
 

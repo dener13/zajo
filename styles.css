@@ -101,6 +101,11 @@ button {
     font-family: "Montserrat", sans-serif;
 }
 
+#btn-enviar:hover{
+    background-color: #0461db;
+    transition: .4s;
+}
+
 .btn-action:hover{
     background-color: var(--blue2);
     border: 1px solid var(--blue2);
@@ -283,8 +288,8 @@ footer > div{
 
 .content-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     width: 28rem;
     max-width: 1200px;
     padding: 25px;
@@ -294,6 +299,8 @@ footer > div{
 
 .form-container {
     flex: 1;
+    width: 100%;
+    margin: 0 auto;
     max-width: 400px;
     padding: 10px;
 }
@@ -406,7 +413,7 @@ input[type="submit"] {
 .third-section .text-overlay {
     position: absolute;
     top: 80px; /* Ajuste conforme necessário */
-    left: 80px; /* Ajuste conforme necessário */
+    left: 120px; /* Ajuste conforme necessário */
     color: white; /* Ajuste a cor do texto conforme necessário */
     /*background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor legibilidade */
     font-size: 3rem;
@@ -417,6 +424,11 @@ input[type="submit"] {
     color: white;
     font-size: 4rem;
     font-weight: bold;
+    text-align: left;
+}
+
+#qualificacao-p{
+    text-align: left;
 }
 
 #economia-tempo-h2{
@@ -582,12 +594,46 @@ input[type="submit"] {
     width: 270px;
 }
 
+
 .second-section{
-    background-color: #edf3f8;
+    position: relative;
+    text-align: center; /* Centraliza o texto, se necessário */
+    background-color: #034275;
+    background: linear-gradient(to bottom, #034275, #02223d);
+}
+
+.second-section .image-container{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.second-section .text-overlay{
+    position: absolute;
+    top: 300px; /* Posiciona o texto verticalmente no meio */
+    left: 950px; /* Posiciona o texto horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+    
+    
 }
 
 #quem-somos{
-    text-align: center;
+    text-align: center;    
+}
+
+
+
+.img-border{
+    border-radius: 5px;
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto; /* Ajuste conforme necessário */
+    
 }
 
 #quem-somos p{
@@ -642,6 +688,37 @@ input[type="submit"] {
 #label-termos{
     margin-top: 5px;
 }
+
+/* Estilos para a seta de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 1750px;
+    background-color: #FFE500;
+    color: #034275;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    display: none; /* Inicialmente escondida */
+    z-index: 1000; /* Fica acima dos outros elementos */
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--blue2);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 
 
 
