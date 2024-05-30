@@ -599,7 +599,7 @@ input[type="submit"] {
     position: relative;
     text-align: center; /* Centraliza o texto, se necessário */
     background-color: #034275;
-    background: linear-gradient(to bottom, #034275, #02223d);
+    background: linear-gradient(to bottom, #034275, #000b14);
 }
 
 .second-section .image-container{
