@@ -624,17 +624,19 @@ input[type="submit"] {
 }
 
 #quem-somos{
-    text-align: center;    
+    text-align: center;
+    height: 800px;   
 }
 
 
 
 .img-border{
-    border-radius: 5px;
     width: 100%; /* Ajuste conforme necessário */
     height: auto; /* Ajuste conforme necessário */
     
 }
+
+
 
 #quem-somos p{
     text-align: left;
@@ -709,6 +711,20 @@ input[type="submit"] {
 .back-to-top:hover {
     background-color: var(--blue2);
     color: white;
+}
+
+
+#por-meio-da-tecnologia{
+    position: absolute;
+    padding: 10px;
+    margin-top: -200px;
+    margin-left: -1450px;
+    width: 1200px;
+}
+#por-meio-da-tecnologia p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 
@@ -1051,7 +1067,7 @@ input[type="submit"] {
         display: flex;
         justify-content: center;
         margin-bottom: 2rem;
-        gap: 3rem;
+        gap: 1rem;
         
     }
     
@@ -1139,6 +1155,7 @@ input[type="submit"] {
         font-size: 1.5rem;
         font-weight: bold;
         margin-left: -400px;
+        margin-top: -15px;
     }
     
     .text-overlay-2{
@@ -1155,8 +1172,9 @@ input[type="submit"] {
     .benefits-list {
         list-style-type: disc; /* Define o tipo de marcador como bolinha */
         padding-left: 20px; /* Ajusta o recuo à esquerda para os itens da lista */
-        margin-top: 35px; /* Espaçamento antes da lista */
-        font-size: 1.2rem;
+        margin-top: 15px; /* Espaçamento antes da lista */
+        margin-left: -400px;
+        font-size: 1rem;
         font-weight: normal;
     }
     
@@ -1168,17 +1186,25 @@ input[type="submit"] {
         padding: 10px;
         margin-top: 50px;
         margin-bottom: 20px;
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: normal;
     }
     
     
     #descubra-h1 {
-        font-size: 1.5em; /* Ajuste conforme necessário */
+        font-size: .7em; /* Ajuste conforme necessário */
         margin-bottom: 10px;
+        margin-left: -250px;
+        margin-top: -40px;
         color: white;
-        line-height: 1.2;
+        line-height: 1.5;
         transition: transform 0.4s ease; /* Adicionando uma transição suave */
+    }
+
+    #encontre-os-motoristas{
+        font-size: .6em; /* Ajuste conforme necessário */
+        margin-left: -250px;
+        line-height: 1.5;
     }
     
     .text-overlay-descubra{
@@ -1195,22 +1221,22 @@ input[type="submit"] {
     
     #text-box-seguranca{
         position: absolute;
-        bottom: 920px; /* ou qualquer valor que desejar */
-        left: 900px; /* ou qualquer valor que desejar */
+        bottom: 500px; /* ou qualquer valor que desejar */
+        left: 400px; /* ou qualquer valor que desejar */
         background-color: var(--yellow); /* Cor de fundo com transparência */
         color: var(--blue); /* Cor do texto */
-        padding: 30px; /* Espaçamento interno */
+        padding: 15px; /* Espaçamento interno */
         border-radius: 5px; /* Borda arredondada */
         text-align: left;
-        font-size: 1.5em;
+        font-size: .8em;
         line-height: 1.5;
     }
     
     #zajo-segurança{
         position: absolute;
         z-index: 1; /* Para garantir que o texto fique acima da imagem */
-        bottom: 1300px; /* ou qualquer valor que desejar */
-        left: 330px; /* ou qualquer valor que desejar */
+        bottom: 700px; /* ou qualquer valor que desejar */
+        left: 30px; /* ou qualquer valor que desejar */
         color: white; /* Cor do texto */
         font-size: 1.1rem; /* Tamanho da fonte */
         /* Adicione outras propriedades de estilo conforme necessário */
@@ -1280,8 +1306,8 @@ input[type="submit"] {
     
     #btn-quero-descubra{
         position: absolute;
-        top: 800px;
-        left: 300px;
+        top: 850px;
+        left: 50px;
         width: 270px;
     }
     
@@ -1294,10 +1320,14 @@ input[type="submit"] {
     
     #btn-quero-agilidade{
         position: absolute;
-        top: 2200px;
-        left: 300px;
+        top: 1220px;
+        left: 50px;
         width: 270px;
     }
+
+    
+
+    
     
     
     .second-section{
@@ -1329,7 +1359,8 @@ input[type="submit"] {
     }
     
     #quem-somos{
-        text-align: center;    
+        text-align: center;
+        height: 400px;
     }
     
     
@@ -1347,6 +1378,26 @@ input[type="submit"] {
         font-size: 1.2em;
         line-height: 1.5;
         color: #034275;
+    }
+
+    #por-meio-da-tecnologia{
+        margin-top: -275px;
+        margin-left: -1200px;
+        text-align: left;
+        font-size: .3em;
+        padding: 0;
+        width: 700px;
+ 
+    }
+
+    #por-meio-da-tecnologia p{
+        color: white;
+        font-size: .8rem; 
+    }
+
+    #quem-somos-h2{
+        text-align: center;
+        
     }
     
     #cadastrar-btn{
@@ -1375,15 +1426,21 @@ input[type="submit"] {
     
     .checkbox-label {
         display: inline-block;
-        text-align: center;
+        text-align: left;
         width: 100%;
-        margin-left: 4px;;
+        margin-left: 7px;;
     }
     
     .subtitle-vantagem{
         color:#333;
-        font-size: 1.8em;
+        font-size: 1.3em;
         
+    }
+
+    #deixe-que-fretes{
+        font-size: 0.5em;
+        margin-left: -400px;
+        margin-top: -30px;
     }
     
     #myForm label{
