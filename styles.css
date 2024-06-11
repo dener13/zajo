@@ -625,7 +625,12 @@ input[type="submit"] {
 
 #quem-somos{
     text-align: center;
-    height: 800px;   
+    height: 900px;
+}
+
+#logo-zajo-quem-somos{
+    height: 200px;
+    width: 200px;
 }
 
 
@@ -740,6 +745,10 @@ input[type="submit"] {
         overflow-x: hidden;
     }
 
+    body{
+        
+    }
+
     header {
         display: flex;
         justify-content: space-around;
@@ -768,10 +777,11 @@ input[type="submit"] {
     
     
     nav{
-        display: flex; /*deixar os itens flexiveis um ao lado do outro*/
-        gap: 2rem;
-        justify-content: center;
-        align-items:center;
+        flex-direction: column;
+        /* display: flex; /*deixar os itens flexiveis um ao lado do outro*/
+        gap: 1rem;
+        /*justify-content: center;
+        align-items:center;*/
         flex-wrap: wrap;
     }
     
@@ -779,14 +789,14 @@ input[type="submit"] {
         text-decoration: none;
         color: var(--blue);
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .nav-links:hover{
         color: var(--blue2);
         transition: .4s;
         text-decoration:underline;
-        text-underline-offset: .5rem;
+        text-underline-offset: .3rem;
         
     }
     
@@ -918,7 +928,7 @@ input[type="submit"] {
     
     
     #venha-fazer-parte {
-        background-image: linear-gradient(rgba(0, 43, 99, 0.5), rgba(0, 0, 0, 0.5)), url('imgs/bg-venhaFazerParte.png');
+        background-image: url('imgs/bg-venhaFazerParte.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -1008,7 +1018,8 @@ input[type="submit"] {
         height: 500px;
         padding: 25px;
         border-radius: 10px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(247, 246, 246);
+        border: 1px solid #034275;
     }
     
     .form-container {
@@ -1360,7 +1371,7 @@ input[type="submit"] {
     
     #quem-somos{
         text-align: center;
-        height: 400px;
+        height: 450px;
     }
     
     
@@ -1471,5 +1482,10 @@ input[type="submit"] {
     .back-to-top:hover {
         background-color: var(--blue2);
         color: white;
+    }
+
+    #logo-zajo-quem-somos{
+        height: 100px;
+        width: 100px;
     }
 }
